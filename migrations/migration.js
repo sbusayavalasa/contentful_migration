@@ -1,8 +1,7 @@
 module.exports = function (migration) {
     // Create a new category field in the blog post content type.
-    console.log("im here");
     const contentType = migration.editContentType('product');
-    contentType.createField('test')
-      .name('Test')
+    contentType.createField('version1')
+      .name('Version1')
       .type('Symbol');
 }
